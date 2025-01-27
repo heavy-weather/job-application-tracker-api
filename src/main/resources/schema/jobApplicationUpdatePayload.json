@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "jobTitle": {
+      "type": "string"
+    },
+    "jobDescription": {
+      "type": "string"
+    },
+    "resume": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "jobPostingUrl": {
+      "type": "string"
+    },
+    "companyId": {
+      "type": "string"
+    },
+    "sentDate": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "jobTitle",
+    "jobDescription",
+    "resume",
+    "status",
+    "jobPostingUrl",
+    "companyId",
+    "sentDate"
+  ]
+}
