@@ -30,7 +30,7 @@ dependencies {
 	implementation 'org.apache.pdfbox:pdfbox-tools:3.0.0'
 	implementation 'com.itextpdf:itextpdf:5.5.13.3'
 
-	runtimeOnly 'com.mysql:mysql-connector-j:9.0.0'
+	runtimeOnly 'com.mysql:mysql-connector-j:9.2.0'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation "org.mockito:mockito-core:3.+"

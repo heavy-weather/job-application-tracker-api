@@ -23,6 +23,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.sql.Blob;
 import java.sql.SQLException;
+import java.time.ZonedDateTime;
 import java.util.Base64;
 import java.util.List;
 import java.util.UUID;
@@ -66,6 +67,14 @@ public class JobApplicationService {
 
                     return jobApplication;
                 }).toList();
+    }
+
+    public int updateStatusForApplicationsOlderThanDate(
+            ZonedDateTime beforeDate,
+            JobApplicationStatus oldStatus,
+            JobApplicationStatus newStatus
+    ) {
+        return jobApplicationRepository.updateStatusWhereSentDateBefore(beforeDate, oldStatus, newStatus);
     }
 
     public JobApplication create(
